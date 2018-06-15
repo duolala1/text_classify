@@ -1,16 +1,17 @@
 CNN短文本分类效果和传统模型比较
 ===
-train.py 
+train.py <br> 
 ---
 训练CNN模型对文本进行分类， 过程可视化表格保存在run文件夹下，可用tensorboard查看<br> 
 -bayes_test.py 负责训练和测试传统模型在该数据集下的工作效果（包括SVM，Naive Bayes和LR模型等）<br> 
-text_cnn.py
+text_cnn.py<br> 
 ---
 保存cnn模型（tensorflow实现）<br> 
--tradition_models
+tradition_models.py<br> 
 ---
 保存传统模型（用scikit-learn实现）<br> 
--data_helper
+
+-data_helper.py<br> 
 ---
 负责文本的分词、去除符号等工作<br> 
 
