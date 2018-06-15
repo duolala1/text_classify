@@ -1,7 +1,11 @@
---项目中样本被分类保存在data文件夹下，每个样本占文本中的一行；
--
---train.py 训练CNN模型对文本进行分类， 过程可视化表格保存在run文件夹下，可用tensorboard查看
--
+-项目中样本被分类保存在data文件夹下，每个样本占文本中的一行；
+-train.py 训练CNN模型对文本进行分类， 过程可视化表格保存在run文件夹下，可用tensorboard查看
+-bayes_test.py 负责训练和测试传统模型在该数据集下的工作效果（包括SVM，Naive Bayes和LR模型等）
+-text_cnn保存cnn模型（tensorflow实现）
+-tradition_models保存传统模型（用scikit-learn实现）
+-data_helper负责文本的分词、去除符号等工作
+
+最终CNN在短文本分类效果达到75%左右正确率
 
 短文本分类首先用正则等方法去除不正规字词
 编码方式：先建立中文词汇表和把文本转为词ID序列，
