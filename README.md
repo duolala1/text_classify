@@ -1,3 +1,8 @@
+--项目中样本被分类保存在data文件夹下，每个样本占文本中的一行；
+--
+--train.py 训练CNN模型对文本进行分类， 过程可视化表格保存在run文件夹下，可用tensorboard查看
+--
+
 短文本分类首先用正则等方法去除不正规字词
 编码方式：先建立中文词汇表和把文本转为词ID序列，
 调用tensorflow中 learn.preprocessing.VocabularyProcessor
@@ -99,6 +104,7 @@ precision recall f1-score support
 1 0.51 1.00 0.67 1078
 
 avg / total 0.26 0.51 0.34 2133
+
 可以看出在MovieReviews这样二类别短文本分类工作上
 CNN明显优于传统方法（81%左右）。
 SVM训练时间明显长于其他方法，且效果较差（不知是不是kernel不太对）
