@@ -1,0 +1,2 @@
+# text_classify
+基于scikit-learn和tensorflow比较多个传统模型和CNN在短文本和长文本上的分类效果
